@@ -2829,9 +2829,9 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1295385531}
   - {fileID: 1842180241}
   - {fileID: 77345245}
-  - {fileID: 1295385531}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -4340,8 +4340,9 @@ GameObject:
   - component: {fileID: 1672953676}
   - component: {fileID: 1672953673}
   - component: {fileID: 1672953672}
+  - component: {fileID: 1672953677}
   m_Layer: 0
-  m_Name: cucaracha_0
+  m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4355,7 +4356,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1672953671}
-  m_BodyType: 2
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -4499,6 +4500,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyDamage
   playerHealth: {fileID: 1838008960}
   damage: 2
+--- !u!114 &1672953677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1672953671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c78da550f5937f14ab98f53d7ac53b2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  moveSpeed: 2
+  target: {fileID: 1838008952}
 --- !u!1 &1687937264
 GameObject:
   m_ObjectHideFlags: 0
@@ -4721,7 +4736,7 @@ GameObject:
   - component: {fileID: 1838008960}
   - component: {fileID: 1838008959}
   m_Layer: 0
-  m_Name: player
+  m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4815,7 +4830,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 478bc02ce01239547bfabe4f3e900407, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
-  velocidad: 3
+  velocidad: 6
   debugVelocity: {x: 0, y: 0}
 --- !u!212 &1838008958
 SpriteRenderer:
