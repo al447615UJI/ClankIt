@@ -1,0 +1,481 @@
+fileFormatVersion: 2
+guid: 3f20427edaceca34bb6f49262a3d1729
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8231774397822705508
+    second: AttackWrench_Sprout_0
+  - first:
+      213: -5982220182165012529
+    second: AttackWrench_Sprout_1
+  - first:
+      213: -4033177275753922850
+    second: AttackWrench_Sprout_2
+  - first:
+      213: -6958290944560611715
+    second: AttackWrench_Sprout_3
+  - first:
+      213: -8709663165757779530
+    second: AttackWrench_Sprout_4
+  - first:
+      213: 1895482816929323739
+    second: AttackWrench_Sprout_5
+  - first:
+      213: -4076304255975700178
+    second: AttackWrench_Sprout_6
+  - first:
+      213: -480377228482434986
+    second: AttackWrench_Sprout_7
+  - first:
+      213: 8869416755456090874
+    second: AttackWrench_Sprout_8
+  - first:
+      213: 8743612148874096711
+    second: AttackWrench_Sprout_9
+  - first:
+      213: -5644507910720032566
+    second: AttackWrench_Sprout_10
+  - first:
+      213: -54470772285468726
+    second: AttackWrench_Sprout_11
+  - first:
+      213: -4916853629598864160
+    second: AttackWrench_Sprout_12
+  - first:
+      213: 6770566363764203834
+    second: AttackWrench_Sprout_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AttackWrench_Sprout_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 0
+        width: 35
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46f906573332d3270800000000000000
+      internalID: 8231774397822705508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackWrench_Sprout_1
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 0
+        width: 35
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcfb1e18072eafca0800000000000000
+      internalID: -5982220182165012529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackWrench_Sprout_2
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 0
+        width: 35
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ede728ae2a64708c0800000000000000
+      internalID: -4033177275753922850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackWrench_Sprout_3
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 0
+        width: 35
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7eb5a5a04f2f6f90800000000000000
+      internalID: -6958290944560611715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackWrench_Sprout_4
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 0
+        width: 36
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b114bb1f7f012780800000000000000
+      internalID: -8709663165757779530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackWrench_Sprout_5
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 0
+        width: 42
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdaddec449b1e4a10800000000000000
+      internalID: 1895482816929323739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackWrench_Sprout_6
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 0
+        width: 43
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e29c72a50ee0e67c0800000000000000
+      internalID: -4076304255975700178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackWrench_Sprout_7
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 0
+        width: 52
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6582e12b47b5559f0800000000000000
+      internalID: -480377228482434986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackWrench_Sprout_8
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 0
+        width: 49
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af2abd10c8f761b70800000000000000
+      internalID: 8869416755456090874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackWrench_Sprout_9
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 21
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7403e6b7cec875970800000000000000
+      internalID: 8743612148874096711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackWrench_Sprout_10
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 24
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac076a906fdaaa1b0800000000000000
+      internalID: -5644507910720032566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackWrench_Sprout_11
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 0
+        width: 47
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acf88470f1b7e3ff0800000000000000
+      internalID: -54470772285468726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackWrench_Sprout_12
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 0
+        width: 50
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ec6b2baca3d3cbb0800000000000000
+      internalID: -4916853629598864160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackWrench_Sprout_13
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 0
+        width: 45
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a31af506c32e5fd50800000000000000
+      internalID: 6770566363764203834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      AttackWrench_Sprout_0: 8231774397822705508
+      AttackWrench_Sprout_1: -5982220182165012529
+      AttackWrench_Sprout_10: -5644507910720032566
+      AttackWrench_Sprout_11: -54470772285468726
+      AttackWrench_Sprout_12: -4916853629598864160
+      AttackWrench_Sprout_13: 6770566363764203834
+      AttackWrench_Sprout_2: -4033177275753922850
+      AttackWrench_Sprout_3: -6958290944560611715
+      AttackWrench_Sprout_4: -8709663165757779530
+      AttackWrench_Sprout_5: 1895482816929323739
+      AttackWrench_Sprout_6: -4076304255975700178
+      AttackWrench_Sprout_7: -480377228482434986
+      AttackWrench_Sprout_8: 8869416755456090874
+      AttackWrench_Sprout_9: 8743612148874096711
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

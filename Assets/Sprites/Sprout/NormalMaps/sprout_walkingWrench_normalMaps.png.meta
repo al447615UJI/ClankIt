@@ -1,25 +1,22 @@
 fileFormatVersion: 2
-guid: e9b8b8f1b5869204e87ee70a71542e8f
+guid: f7a7adc355715bd4aa4b1890ddc3ba49
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8913757917319633677
-    second: caminar_0
+      213: 3540837581083697841
+    second: sprout_walkingWrench_normalMaps_0
   - first:
-      213: -4199407134815586442
-    second: caminar_1
+      213: -1821498381898248441
+    second: sprout_walkingWrench_normalMaps_1
   - first:
-      213: 6823075394268943625
-    second: caminar_2
+      213: 5375635416977776360
+    second: sprout_walkingWrench_normalMaps_2
   - first:
-      213: 4379400099904091852
-    second: caminar_3
+      213: -6035163836140889993
+    second: sprout_walkingWrench_normalMaps_3
   - first:
-      213: 9004852273727659997
-    second: caminar_4
-  - first:
-      213: 994404661622652260
-    second: caminar_5
+      213: -3677420475109739551
+    second: sprout_walkingWrench_normalMaps_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -115,13 +112,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: caminar_0
+      name: sprout_walkingWrench_normalMaps_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 32
+        width: 34
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,20 +127,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3f4665cb668fb4480800000000000000
-      internalID: -8913757917319633677
+      spriteID: 1b2e8d31505932130800000000000000
+      internalID: 3540837581083697841
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caminar_1
+      name: sprout_walkingWrench_normalMaps_1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 34
         y: 0
-        width: 32
-        height: 32
+        width: 34
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +149,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6777316d575b8b5c0800000000000000
-      internalID: -4199407134815586442
+      spriteID: 70f81045fdcb8b6e0800000000000000
+      internalID: -1821498381898248441
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caminar_2
+      name: sprout_walkingWrench_normalMaps_2
       rect:
         serializedVersion: 2
-        x: 64
+        x: 68
         y: 0
-        width: 32
-        height: 32
+        width: 34
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,20 +171,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 905db1fbbee60be50800000000000000
-      internalID: 6823075394268943625
+      spriteID: 8ee18fe2ee71a9a40800000000000000
+      internalID: 5375635416977776360
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caminar_3
+      name: sprout_walkingWrench_normalMaps_3
       rect:
         serializedVersion: 2
-        x: 96
+        x: 102
         y: 0
-        width: 32
-        height: 32
+        width: 34
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,20 +193,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cc6f7141031c6cc30800000000000000
-      internalID: 4379400099904091852
+      spriteID: 778d989777ace3ca0800000000000000
+      internalID: -6035163836140889993
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caminar_4
+      name: sprout_walkingWrench_normalMaps_4
       rect:
         serializedVersion: 2
-        x: 128
+        x: 136
         y: 0
-        width: 32
-        height: 32
+        width: 34
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,30 +215,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ddfd766ee69a7fc70800000000000000
-      internalID: 9004852273727659997
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: caminar_5
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 46db20b65c5dccd00800000000000000
-      internalID: 994404661622652260
+      spriteID: 1e3f55bcf8d27fcc0800000000000000
+      internalID: -3677420475109739551
       vertices: []
       indices: 
       edges: []
@@ -250,7 +225,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 529468fe5075adb46997699d9c82bdd4
+    spriteID: 46a1910fb0027094db7f483c34c3d21f
     internalID: 0
     vertices: []
     indices: 
@@ -260,14 +235,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":34.0,"y":37.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      caminar_0: -8913757917319633677
-      caminar_1: -4199407134815586442
-      caminar_2: 6823075394268943625
-      caminar_3: 4379400099904091852
-      caminar_4: 9004852273727659997
-      caminar_5: 994404661622652260
+      sprout_walkingWrench_normalMaps_0: 3540837581083697841
+      sprout_walkingWrench_normalMaps_1: -1821498381898248441
+      sprout_walkingWrench_normalMaps_2: 5375635416977776360
+      sprout_walkingWrench_normalMaps_3: -6035163836140889993
+      sprout_walkingWrench_normalMaps_4: -3677420475109739551
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

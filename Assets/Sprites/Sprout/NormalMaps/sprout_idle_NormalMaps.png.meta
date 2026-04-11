@@ -1,25 +1,19 @@
 fileFormatVersion: 2
-guid: 41b61e97a6ededb4cb192ae544ae82e4
+guid: 79872839da98ce246aae326cbd63705c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8793639957104055765
-    second: idle_0
+      213: 8337200322244873529
+    second: sprout_idle_NormalMaps_0
   - first:
-      213: 6084859605308855041
-    second: idle_1
+      213: 6140370693452430420
+    second: sprout_idle_NormalMaps_1
   - first:
-      213: 8603369663158992956
-    second: idle_2
+      213: -6636150136852672229
+    second: sprout_idle_NormalMaps_2
   - first:
-      213: -5906421172241655209
-    second: idle_3
-  - first:
-      213: 5704420531145803721
-    second: idle_4
-  - first:
-      213: -148617073940163930
-    second: idle_5
+      213: -691113663887953225
+    second: sprout_idle_NormalMaps_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -115,12 +109,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: idle_0
+      name: sprout_idle_NormalMaps_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
+        width: 17
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -130,19 +124,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5d55ed543f8490a70800000000000000
-      internalID: 8793639957104055765
+      spriteID: 93d8dac458fa3b370800000000000000
+      internalID: 8337200322244873529
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_1
+      name: sprout_idle_NormalMaps_1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 17
         y: 0
-        width: 32
+        width: 17
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -152,19 +146,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 103de827293c17450800000000000000
-      internalID: 6084859605308855041
+      spriteID: 45c7374dc9af63550800000000000000
+      internalID: 6140370693452430420
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_2
+      name: sprout_idle_NormalMaps_2
       rect:
         serializedVersion: 2
-        x: 64
+        x: 34
         y: 0
-        width: 32
+        width: 17
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -174,19 +168,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c30c6f3402f456770800000000000000
-      internalID: 8603369663158992956
+      spriteID: b119cb04c98a7e3a0800000000000000
+      internalID: -6636150136852672229
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_3
+      name: sprout_idle_NormalMaps_3
       rect:
         serializedVersion: 2
-        x: 96
+        x: 51
         y: 0
-        width: 32
+        width: 17
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -196,19 +190,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 75a90b6cc3d280ea0800000000000000
-      internalID: -5906421172241655209
+      spriteID: 7b23a8cc8cba866f0800000000000000
+      internalID: -691113663887953225
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_4
+      name: sprout_idle_NormalMaps_4
       rect:
         serializedVersion: 2
-        x: 128
+        x: 68
         y: 0
-        width: 32
+        width: 17
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -216,32 +210,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9c70460ff3c2a2f40800000000000000
-      internalID: 5704420531145803721
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: idle_5
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6a21d340f8100fdf0800000000000000
-      internalID: -148617073940163930
+      spriteID: 9f527cd1167ac504e8717debbecf84ac
+      internalID: 1550268761
       vertices: []
       indices: 
       edges: []
@@ -250,7 +222,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 54803abc2202d8945a3cdc37caa18739
+    spriteID: 21605c88d48bde34b925e8d47adcf6f5
     internalID: 0
     vertices: []
     indices: 
@@ -260,14 +232,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":17.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      idle_0: 8793639957104055765
-      idle_1: 6084859605308855041
-      idle_2: 8603369663158992956
-      idle_3: -5906421172241655209
-      idle_4: 5704420531145803721
-      idle_5: -148617073940163930
+      sprout_idle_NormalMaps_0: 8337200322244873529
+      sprout_idle_NormalMaps_1: 6140370693452430420
+      sprout_idle_NormalMaps_2: -6636150136852672229
+      sprout_idle_NormalMaps_3: -691113663887953225
+      sprout_idle_NormalMaps_4: 1550268761
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

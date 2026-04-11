@@ -3,8 +3,14 @@ using UnityEngine;
 
 public class Timer : MonoBehaviour
 {
-    [SerializeField] TextMeshProUGUI timerText;
-    float elapsedTime;        
+
+    private TMP_Text timerText;
+    float elapsedTime;
+    void Start()
+    {
+        
+        timerText = GetComponent<TMP_Text>();
+    }  
     // Update is called once per frame
     void Update()
     {
