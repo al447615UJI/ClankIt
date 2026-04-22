@@ -9,10 +9,10 @@ public class PlayerController : MonoBehaviour
     private PlayerInput input;
     private Animator animator;
 
+    private bool hasWeapon = false;
+
     [SerializeField] private Vector2 debugVelocity;
-
     private bool isMoving = false;
-
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -30,43 +30,98 @@ public class PlayerController : MonoBehaviour
 
     }
 
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Wrench"))
+        {
+            hasWeapon = true;
+            collision.gameObject.SetActive(false);
+        }
+    }
+
     void FixedUpdate()
     {
-        Vector2 movimiento = input.movement;
-
-        rb.linearVelocity = movimiento * velocidad;
-
-        if (movimiento != Vector2.zero && !isMoving)
+        if (!hasWeapon)
         {
-            animator.Play("Run");
-            isMoving = true;
-        }
-        else if (movimiento == Vector2.zero && isMoving)
-        {
-            animator.Play("Idle");
-            isMoving = false;
+            Vector2 movimiento = input.movement;
+
+            rb.linearVelocity = movimiento * velocidad;
+
+            if (movimiento != Vector2.zero && !isMoving)
+            {
+                animator.Play("Run");
+                isMoving = true;
+            }
+            else if (movimiento == Vector2.zero && isMoving)
+            {
+                animator.Play("Idle");
+                isMoving = false;
 
 
+            }
+
+            if (movimiento.x > 0 && sprite.flipX)
+            {
+                sprite.flipX = false;
+            }
+            else
+            {
+                if (movimiento.x < 0 && !sprite.flipX)
+                {
+                    sprite.flipX = true;
+                }
+            }
+
+            debugVelocity = rb.linearVelocity;
         }
 
-        if (movimiento.x > 0 && sprite.flipX)
-        {
-            sprite.flipX = false;
-        }
         else
         {
-            if (movimiento.x < 0 && !sprite.flipX)
+            Vector2 movimiento = input.movement;
+
+            rb.linearVelocity = movimiento * velocidad;
+
+            if (movimiento != Vector2.zero && !isMoving)
             {
-                sprite.flipX = true;
+                animator.Play("WalkWrench");
+                isMoving = true;
             }
+            else if (movimiento == Vector2.zero && isMoving)
+            {
+                animator.Play("IdleWrench");
+                isMoving = false;
+
+
+            }
+
+            if (movimiento.x > 0 && sprite.flipX)
+            {
+                sprite.flipX = false;
+            }
+            else
+            {
+                if (movimiento.x < 0 && !sprite.flipX)
+                {
+                    sprite.flipX = true;
+                }
+            }
+
+            debugVelocity = rb.linearVelocity;
         }
 
-        debugVelocity = rb.linearVelocity;
+
 
     }
-    // Update is called once per frame
     void Update()
     {
-
+    
     }
+
+
 }
+
+
+
+
+
