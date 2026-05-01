@@ -142,12 +142,12 @@ TextureImporter:
       name: AttackWrench_Sprout_0
       rect:
         serializedVersion: 2
-        x: 9
+        x: 0
         y: 0
-        width: 35
-        height: 37
+        width: 74
+        height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -164,12 +164,12 @@ TextureImporter:
       name: AttackWrench_Sprout_1
       rect:
         serializedVersion: 2
-        x: 83
+        x: 74
         y: 0
-        width: 35
-        height: 38
+        width: 74
+        height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -186,12 +186,12 @@ TextureImporter:
       name: AttackWrench_Sprout_2
       rect:
         serializedVersion: 2
-        x: 156
+        x: 148
         y: 0
-        width: 35
-        height: 39
+        width: 74
+        height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -208,12 +208,12 @@ TextureImporter:
       name: AttackWrench_Sprout_3
       rect:
         serializedVersion: 2
-        x: 230
+        x: 222
         y: 0
-        width: 35
-        height: 39
+        width: 74
+        height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -230,12 +230,12 @@ TextureImporter:
       name: AttackWrench_Sprout_4
       rect:
         serializedVersion: 2
-        x: 302
+        x: 296
         y: 0
-        width: 36
-        height: 35
+        width: 74
+        height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -252,12 +252,12 @@ TextureImporter:
       name: AttackWrench_Sprout_5
       rect:
         serializedVersion: 2
-        x: 372
+        x: 370
         y: 0
-        width: 42
-        height: 33
+        width: 74
+        height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -274,12 +274,12 @@ TextureImporter:
       name: AttackWrench_Sprout_6
       rect:
         serializedVersion: 2
-        x: 443
+        x: 444
         y: 0
-        width: 43
-        height: 34
+        width: 74
+        height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -296,12 +296,12 @@ TextureImporter:
       name: AttackWrench_Sprout_7
       rect:
         serializedVersion: 2
-        x: 537
+        x: 518
         y: 0
-        width: 52
+        width: 74
         height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -318,12 +318,12 @@ TextureImporter:
       name: AttackWrench_Sprout_8
       rect:
         serializedVersion: 2
-        x: 618
+        x: 592
         y: 0
-        width: 49
-        height: 28
+        width: 74
+        height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -340,12 +340,12 @@ TextureImporter:
       name: AttackWrench_Sprout_9
       rect:
         serializedVersion: 2
-        x: 647
-        y: 21
-        width: 9
-        height: 10
+        x: 666
+        y: 0
+        width: 74
+        height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -362,12 +362,12 @@ TextureImporter:
       name: AttackWrench_Sprout_10
       rect:
         serializedVersion: 2
-        x: 654
-        y: 24
-        width: 9
-        height: 13
+        x: 740
+        y: 0
+        width: 74
+        height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -384,12 +384,12 @@ TextureImporter:
       name: AttackWrench_Sprout_11
       rect:
         serializedVersion: 2
-        x: 692
+        x: 814
         y: 0
-        width: 47
-        height: 24
+        width: 74
+        height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -402,55 +402,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: AttackWrench_Sprout_12
-      rect:
-        serializedVersion: 2
-        x: 760
-        y: 0
-        width: 50
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0ec6b2baca3d3cbb0800000000000000
-      internalID: -4916853629598864160
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AttackWrench_Sprout_13
-      rect:
-        serializedVersion: 2
-        x: 834
-        y: 0
-        width: 45
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a31af506c32e5fd50800000000000000
-      internalID: 6770566363764203834
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: a08bc342741290d4e8555ffa37bf2e52
     internalID: 0
     vertices: []
     indices: 
@@ -458,14 +414,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":74.0,"y":45.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       AttackWrench_Sprout_0: 8231774397822705508
       AttackWrench_Sprout_1: -5982220182165012529
       AttackWrench_Sprout_10: -5644507910720032566
       AttackWrench_Sprout_11: -54470772285468726
-      AttackWrench_Sprout_12: -4916853629598864160
-      AttackWrench_Sprout_13: 6770566363764203834
       AttackWrench_Sprout_2: -4033177275753922850
       AttackWrench_Sprout_3: -6958290944560611715
       AttackWrench_Sprout_4: -8709663165757779530

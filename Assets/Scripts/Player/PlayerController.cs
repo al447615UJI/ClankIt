@@ -1,19 +1,17 @@
+using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private float velocidad = 5f;
     private Rigidbody2D rb;
     private SpriteRenderer sprite;
     private PlayerInput input;
     private Animator animator;
 
-    private bool hasWeapon = false;
+    public bool hasWrench {get; private set;} = false;
+
 
     [SerializeField] private Vector2 debugVelocity;
-    private bool isMoving = false;
-
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -35,39 +33,35 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.CompareTag("Wrench"))
         {
-            hasWeapon = true;
-            collision.gameObject.SetActive(false);
+            hasWrench = true;
+            animator.SetBool("hasWrench", true);
+            Destroy(collision.gameObject);
         }
     }
 
     void FixedUpdate()
     {
-        if (!hasWeapon)
+        if (!hasWrench)
         {
-            Vector2 movimiento = input.movement;
+            // if (input.movement != Vector2.zero)
+            // {
+            //     animator.Play("Run");
 
-            rb.linearVelocity = movimiento * velocidad;
-
-            if (movimiento != Vector2.zero && !isMoving)
-            {
-                animator.Play("Run");
-                isMoving = true;
-            }
-            else if (movimiento == Vector2.zero && isMoving)
-            {
-                animator.Play("Idle");
-                isMoving = false;
+            // }
+            // else
+            // {
+            //     animator.Play("Idle");
 
 
-            }
+            // }
 
-            if (movimiento.x > 0 && sprite.flipX)
+            if (input.movement.x > 0 && sprite.flipX)
             {
                 sprite.flipX = false;
             }
             else
             {
-                if (movimiento.x < 0 && !sprite.flipX)
+                if (input.movement.x < 0 && !sprite.flipX)
                 {
                     sprite.flipX = true;
                 }
@@ -78,30 +72,25 @@ public class PlayerController : MonoBehaviour
 
         else
         {
-            Vector2 movimiento = input.movement;
 
-            rb.linearVelocity = movimiento * velocidad;
-
-            if (movimiento != Vector2.zero && !isMoving)
-            {
-                animator.Play("WalkWrench");
-                isMoving = true;
-            }
-            else if (movimiento == Vector2.zero && isMoving)
-            {
-                animator.Play("IdleWrench");
-                isMoving = false;
+            // if (input.movement != Vector2.zero)
+            // {
+            //     animator.Play("WalkWrench");
+            // }
+            // else
+            // {
+            //     animator.Play("IdleWrench");
 
 
-            }
+            // }
 
-            if (movimiento.x > 0 && sprite.flipX)
+            if (input.movement.x > 0 && sprite.flipX)
             {
                 sprite.flipX = false;
             }
             else
             {
-                if (movimiento.x < 0 && !sprite.flipX)
+                if (input.movement.x < 0 && !sprite.flipX)
                 {
                     sprite.flipX = true;
                 }
@@ -115,7 +104,10 @@ public class PlayerController : MonoBehaviour
     }
     void Update()
     {
-    
+        //if (input.isAttacking)
+        //{
+        //    Debug.Log("atacando!!!!");
+        //}
     }
 
 
