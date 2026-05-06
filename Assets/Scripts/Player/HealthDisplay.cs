@@ -1,6 +1,4 @@
 using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine.UI;
 
 public class HealthDisplay : MonoBehaviour
@@ -23,7 +21,7 @@ public class HealthDisplay : MonoBehaviour
     void Update()
     {
 
-        health = playerHealth.health;
+        health = playerHealth.currentHealth;
         maxHealth = playerHealth.maxHealth;
         
         for (int i = 0; i < hearts.Length; i++)

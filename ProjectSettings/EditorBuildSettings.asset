@@ -6,8 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Arte2d_isometrico.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
+    path: Assets/Scenes/Main Menu.unity
+    guid: 945c32f857a137a4e9b94726125dd2f1
+  - enabled: 1
+    path: Assets/Scenes/Proyecto1.unity
+    guid: c58d48afd2c876c4ea39c5061492087f
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2db4bf49beccf1045bf91a71038b9fbc, type: 3}
   m_UseUCBPForAssetBundles: 0

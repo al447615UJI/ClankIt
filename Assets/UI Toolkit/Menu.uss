@@ -1,0 +1,26 @@
+:root {
+}
+
+.menu-boton {
+    width: 20%;
+    height: 60%;
+    font-size: 60px;
+    color: rgb(57, 17, 47);
+    background-color: rgb(240, 190, 145);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.menu-boton:hover {
+    width: 20%;
+    height: 60%;
+    font-size: 65px;
+    color: rgb(57, 17, 47);
+    background-color: rgb(236, 225, 183);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}

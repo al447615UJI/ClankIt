@@ -36,9 +36,9 @@ public class EnemyChaseState : EnemyState
         UnityEngine.Vector2 moveDirection = (_playerTransform.position - enemy.transform.position).normalized;
         enemy.MoveEnemy(moveDirection * _movementSpeed);
 
-        if (enemy.IsWithinStrikingDistance)
+        if (enemy.isWithinStrikingDistance)
         {
-            enemy.StateMachine.ChangeState(enemy.AttackState);
+            enemy.stateMachine.ChangeState(enemy.attackState);
         }
     }
 

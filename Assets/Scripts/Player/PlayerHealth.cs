@@ -2,19 +2,19 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public int health;
+    public int currentHealth;
     public int maxHealth = 10;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        health = maxHealth;
+        currentHealth = maxHealth;
     }
 
     // Update is called once per frame
     public void TakeDamage(int amount)
     {
-        health -= amount;
-        if (health <=0)
+        currentHealth -= amount;
+        if (currentHealth <=0)
         {
             Destroy(gameObject);
         }

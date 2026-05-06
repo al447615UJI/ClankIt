@@ -28,14 +28,14 @@ public class EnemyIdleState : EnemyState
     {
         base.FrameUpdate();
 
-        if (enemy.IsAggroed)
+        if (enemy.isAggroed)
         {
-            enemy.StateMachine.ChangeState(enemy.ChaseState);
+            enemy.stateMachine.ChangeState(enemy.chaseState);
         }
 
         _direction = (_targetPos - enemy.transform.position).normalized;
 
-        enemy.MoveEnemy(_direction * enemy.RandomMovementSpeed);
+        enemy.MoveEnemy(_direction * enemy.randomMovementSpeed);
 
         if ((enemy.transform.position - _targetPos).sqrMagnitude < 0.01f)
         {
@@ -49,6 +49,6 @@ public class EnemyIdleState : EnemyState
     }       
     private Vector3 GetRandomPointInCircle()
     {
-        return enemy.transform.position + (Vector3)UnityEngine.Random.insideUnitCircle * enemy.RandomMovementRange;
+        return enemy.transform.position + (Vector3)UnityEngine.Random.insideUnitCircle * enemy.randomMovementRange;
     }
 }

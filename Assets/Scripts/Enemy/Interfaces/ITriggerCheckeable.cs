@@ -2,8 +2,8 @@ using UnityEngine;
 
 public interface ITriggerCheckeable
 {
-    bool IsAggroed {get; set;}
-    bool IsWithinStrikingDistance{get;set;}
+    bool isAggroed {get; set;}
+    bool isWithinStrikingDistance{get;set;}
 
     void SetAggroStatus(bool IsAggroed);
     void SetStrikingDistanceBool(bool isWithinStrikingDistance);

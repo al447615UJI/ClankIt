@@ -44,7 +44,7 @@ public class EnemyAttackState : EnemyState
             _timer = 0f;
             Vector2 dir = (_playerTrasform.position - enemy.transform.position).normalized;
 
-            Rigidbody2D bullet = GameObject.Instantiate(enemy.BulletPrefab, enemy.transform.position, Quaternion.identity);
+            Rigidbody2D bullet = GameObject.Instantiate(enemy.bulletPrefab, enemy.transform.position, Quaternion.identity);
             bullet.linearVelocity = dir * _bulletSpeed;
         }
 
@@ -54,7 +54,7 @@ public class EnemyAttackState : EnemyState
 
             if (_exitTimer > _timeTillExit)
             {
-                enemy.StateMachine.ChangeState(enemy.ChaseState);
+                enemy.stateMachine.ChangeState(enemy.chaseState);
             }
         }
         else

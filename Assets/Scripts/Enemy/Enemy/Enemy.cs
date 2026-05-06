@@ -1,17 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
-using NUnit.Framework;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour, IDamageable, IEnemyMoveable, ITriggerCheckeable
 {
-    [field: SerializeField] public float MaxHealth { get ; set ; } = 100f;
-    public float CurrentHealth { get ; set ; }
-    public Rigidbody2D RB { get; set; }
-    public bool IsFacingRight { get; set; } = true;
-    public bool IsAggroed {get; set; }
-    public bool IsWithinStrikingDistance { get; set; }
+    [field: SerializeField] public int maxHealth { get ; set ; }
+    public int currentHealth { get ; set ; }
+    public Rigidbody2D rb { get; set; }
+    public bool isFacingRight { get; set; } = true;
+    public bool isAggroed {get; set; }
+    public bool isWithinStrikingDistance { get; set; }
 
     
 
@@ -20,23 +16,22 @@ public class Enemy : MonoBehaviour, IDamageable, IEnemyMoveable, ITriggerCheckea
     // idle variables
 
 
-    public Rigidbody2D BulletPrefab;
-    public float RandomMovementRange = 5f;
-    public float RandomMovementSpeed = 1f; 
+    public Rigidbody2D bulletPrefab;
+    public float randomMovementRange = 5f;
+    public float randomMovementSpeed = 1f; 
 
-    public EnemyStateMachine StateMachine{get; set; }
-    public EnemyIdleState IdleState {get; set;}
-    public EnemyChaseState ChaseState {get;set;}
-    public EnemyAttackState AttackState {get;set;}
+    public EnemyStateMachine stateMachine{get; set; }
+    public EnemyIdleState idleState {get; set;}
+    public EnemyChaseState chaseState {get;set;}
+    public EnemyAttackState attackState {get;set;}
     
     private void Awake()
     {
-        StateMachine = new EnemyStateMachine();
+        stateMachine = new EnemyStateMachine();
 
-        IdleState = new EnemyIdleState(this, StateMachine);
-        ChaseState = new EnemyChaseState(this, StateMachine);
-        AttackState = new EnemyAttackState(this, StateMachine);
-
+        idleState = new EnemyIdleState(this, stateMachine);
+        chaseState = new EnemyChaseState(this, stateMachine);
+        attackState = new EnemyAttackState(this, stateMachine);
     }
 
 
@@ -44,23 +39,24 @@ public class Enemy : MonoBehaviour, IDamageable, IEnemyMoveable, ITriggerCheckea
 
     private void Start()
     {
-        CurrentHealth = MaxHealth;
-        RB = GetComponent<Rigidbody2D>();
+        currentHealth = maxHealth;
+        rb = GetComponent<Rigidbody2D>();
 
         // STATEMACHINE
 
-        StateMachine.Initialize(IdleState);
+        stateMachine.Initialize(idleState);
 
+        Debug.Log("Hello! I have " + currentHealth + " health, wow");
     }
 
     private void Update()
     {
-        StateMachine.CurrentEnemyState.FrameUpdate();
+        stateMachine.CurrentEnemyState.FrameUpdate();
     }
 
     private void FixedUpdate()
     {
-        StateMachine.CurrentEnemyState.PhysicsUpdate();
+        stateMachine.CurrentEnemyState.PhysicsUpdate();
     }
 
     //Health / Die Functions
@@ -71,7 +67,7 @@ public class Enemy : MonoBehaviour, IDamageable, IEnemyMoveable, ITriggerCheckea
     
     private void AnimationTriggerEvent(AnimationTriggerType triggerType)
     {
-        StateMachine.CurrentEnemyState.AnimationTriggerEvent(triggerType);
+        stateMachine.CurrentEnemyState.AnimationTriggerEvent(triggerType);
     }
 
     public enum AnimationTriggerType
@@ -80,11 +76,12 @@ public class Enemy : MonoBehaviour, IDamageable, IEnemyMoveable, ITriggerCheckea
         PlayFootstepsSound
     }
 
-    public void Damage(float damageAmount)
+    public void Damage(int damageAmount)
     {
-        CurrentHealth -= damageAmount;
+        Debug.Log("Im getting damaged!!");
+        currentHealth -= damageAmount;
 
-        if (CurrentHealth <= 0)
+        if (currentHealth <= 0)
         {
             Die();
         }
@@ -92,28 +89,28 @@ public class Enemy : MonoBehaviour, IDamageable, IEnemyMoveable, ITriggerCheckea
 
     public void Die()
     {
-        
+        Destroy(gameObject);
     }
 
     public void MoveEnemy(Vector2 velocity)
     {
-        RB.linearVelocity = velocity;
+        rb.linearVelocity = velocity;
         CheckForLeftOrRightFacing(velocity);
     }
 
     public void CheckForLeftOrRightFacing(Vector2 velocity)
     {
-        if (IsFacingRight && velocity.x < 0f)
+        if (isFacingRight && velocity.x < 0f)
         {
             Vector3 rotator = new Vector3(transform.rotation.x,180f, transform.rotation.z);
             transform.rotation = Quaternion.Euler(rotator);
-            IsFacingRight = !IsFacingRight;
+            isFacingRight = !isFacingRight;
         }
-        else if (!IsFacingRight && velocity.x > 0f)
+        else if (!isFacingRight && velocity.x > 0f)
         {
             Vector3 rotator = new Vector3(transform.rotation.x, 0f, transform.rotation.z);
             transform.rotation = Quaternion.Euler(rotator);
-            IsFacingRight = !IsFacingRight;
+            isFacingRight = !isFacingRight;
         }
         
 
@@ -121,12 +118,12 @@ public class Enemy : MonoBehaviour, IDamageable, IEnemyMoveable, ITriggerCheckea
 
     public void SetAggroStatus(bool isAggroed)
     {
-        IsAggroed = isAggroed;
+        this.isAggroed = isAggroed;
     }
 
     public void SetStrikingDistanceBool(bool isWithinStrikingDistance)
     {
-        IsWithinStrikingDistance = isWithinStrikingDistance;
+        this.isWithinStrikingDistance = isWithinStrikingDistance;
     }
 
    

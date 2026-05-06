@@ -6,6 +6,8 @@ public class PlayerMovement : MonoBehaviour
     private PlayerInput input;
     private Animator animator;
 
+    private bool isFacingRight = true;
+
     
     [SerializeField] private float velocidad = 5f;
     void Awake()
@@ -13,11 +15,6 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         input = GetComponent<PlayerInput>();
         animator = GetComponent<Animator>();
-    }
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
     }
 
     void FixedUpdate()
@@ -34,5 +31,20 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         animator.SetFloat("velocity", rb.linearVelocity.sqrMagnitude);
+
+        if (input.movement.x < 0 && isFacingRight)
+        {
+            Flip();
+        } else if (input.movement.x > 0 && !isFacingRight)
+        {
+            Flip();
+        }
+    }
+
+        // Rotates the whole gameObject, not just the sprite
+    private void Flip()
+    {
+        isFacingRight = !isFacingRight;
+        transform.Rotate(0, 180, 0);
     }
 }

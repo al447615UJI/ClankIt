@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7922a307430652a448623f1188a3b211
+guid: 27e94c6872c6baf48a0125511d61c04d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8851257201210328293
-    second: Menu Tab2_0
+      213: 604148496579203403
+    second: MenuCompleto_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Menu Tab2_0
+      name: MenuCompleto_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
-        height: 32
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b1b7d32b8740a2580800000000000000
-      internalID: -8851257201210328293
+      spriteID: b4190325bdd526800800000000000000
+      internalID: 604148496579203403
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Menu Tab2_0: -8851257201210328293
+      MenuCompleto_0: 604148496579203403
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

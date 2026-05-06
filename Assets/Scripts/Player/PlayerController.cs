@@ -9,23 +9,19 @@ public class PlayerController : MonoBehaviour
     private Animator animator;
 
     public bool hasWrench {get; private set;} = false;
-
-
     [SerializeField] private Vector2 debugVelocity;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
 
-    }
 
+    }
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         sprite = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         input = GetComponent<PlayerInput>();
-
     }
 
 
@@ -43,77 +39,11 @@ public class PlayerController : MonoBehaviour
     {
         if (!hasWrench)
         {
-            // if (input.movement != Vector2.zero)
-            // {
-            //     animator.Play("Run");
-
-            // }
-            // else
-            // {
-            //     animator.Play("Idle");
-
-
-            // }
-
-            if (input.movement.x > 0 && sprite.flipX)
-            {
-                sprite.flipX = false;
-            }
-            else
-            {
-                if (input.movement.x < 0 && !sprite.flipX)
-                {
-                    sprite.flipX = true;
-                }
-            }
-
             debugVelocity = rb.linearVelocity;
-        }
-
-        else
+        } else
         {
-
-            // if (input.movement != Vector2.zero)
-            // {
-            //     animator.Play("WalkWrench");
-            // }
-            // else
-            // {
-            //     animator.Play("IdleWrench");
-
-
-            // }
-
-            if (input.movement.x > 0 && sprite.flipX)
-            {
-                sprite.flipX = false;
-            }
-            else
-            {
-                if (input.movement.x < 0 && !sprite.flipX)
-                {
-                    sprite.flipX = true;
-                }
-            }
-
             debugVelocity = rb.linearVelocity;
         }
-
-
-
     }
-    void Update()
-    {
-        //if (input.isAttacking)
-        //{
-        //    Debug.Log("atacando!!!!");
-        //}
-    }
-
 
 }
-
-
-
-
-
