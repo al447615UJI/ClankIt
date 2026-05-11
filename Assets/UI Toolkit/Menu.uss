@@ -2,9 +2,9 @@
 }
 
 .menu-boton {
-    width: 20%;
-    height: 60%;
-    font-size: 60px;
+    width: 15%;
+    height: 30%;
+    font-size: 40px;
     color: rgb(57, 17, 47);
     background-color: rgb(240, 190, 145);
     border-top-left-radius: 20px;
@@ -16,7 +16,7 @@
 .menu-boton:hover {
     width: 20%;
     height: 60%;
-    font-size: 65px;
+    font-size: 45px;
     color: rgb(57, 17, 47);
     background-color: rgb(236, 225, 183);
     border-top-left-radius: 20px;

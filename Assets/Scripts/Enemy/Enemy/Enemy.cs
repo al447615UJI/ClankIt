@@ -2,12 +2,14 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour, IDamageable, IEnemyMoveable, ITriggerCheckeable
 {
+    private EnemyHealthBar healthBar;
     [field: SerializeField] public int maxHealth { get ; set ; }
     public int currentHealth { get ; set ; }
     public Rigidbody2D rb { get; set; }
     public bool isFacingRight { get; set; } = true;
     public bool isAggroed {get; set; }
     public bool isWithinStrikingDistance { get; set; }
+
 
     
 
@@ -28,10 +30,12 @@ public class Enemy : MonoBehaviour, IDamageable, IEnemyMoveable, ITriggerCheckea
     private void Awake()
     {
         stateMachine = new EnemyStateMachine();
-
         idleState = new EnemyIdleState(this, stateMachine);
         chaseState = new EnemyChaseState(this, stateMachine);
         attackState = new EnemyAttackState(this, stateMachine);
+
+        //
+        healthBar = GetComponentInChildren<EnemyHealthBar>();
     }
 
 
@@ -85,6 +89,8 @@ public class Enemy : MonoBehaviour, IDamageable, IEnemyMoveable, ITriggerCheckea
         {
             Die();
         }
+
+        healthBar.SetSize(currentHealth, maxHealth);
     }
 
     public void Die()
