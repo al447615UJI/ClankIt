@@ -1,0 +1,12 @@
+:root {
+}
+
+.ui-label {
+    font-size: 300%;
+    color: rgb(255, 255, 255);
+    margin-top: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    -unity-text-outline-width: 1px;
+}

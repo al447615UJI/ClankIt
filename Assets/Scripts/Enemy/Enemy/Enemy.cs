@@ -4,6 +4,7 @@ public class Enemy : MonoBehaviour, IDamageable, IEnemyMoveable, ITriggerCheckea
 {
     private EnemyHealthBar healthBar;
     [field: SerializeField] public int maxHealth { get ; set ; }
+    [SerializeField] private int score = 100;
     public int currentHealth { get ; set ; }
     public Rigidbody2D rb { get; set; }
     public bool isFacingRight { get; set; } = true;
@@ -95,6 +96,7 @@ public class Enemy : MonoBehaviour, IDamageable, IEnemyMoveable, ITriggerCheckea
 
     public void Die()
     {
+        GameManager.instance.AddScore(score);
         Destroy(gameObject);
     }
 

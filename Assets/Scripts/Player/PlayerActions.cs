@@ -4,10 +4,13 @@ public class PlayerActions : MonoBehaviour
 {
     [SerializeField] int damage = 1;
     [SerializeField] private BoxCollider2D hitbox;
-    [SerializeField] private LayerMask damageableLayer;
+    //[SerializeField] private LayerMask damageableLayer;
     private Animator animator;
     private PlayerInput input;
     private PlayerController controller;
+    private PlayerMovement movement;
+    private PlayerMeleeHitbox melee;
+   // private BoxCollider2D hitbox;
 
 
     void Awake()
@@ -15,6 +18,9 @@ public class PlayerActions : MonoBehaviour
         animator = GetComponent<Animator>();
         input = GetComponent<PlayerInput>();
         controller = GetComponent<PlayerController>();
+        //hitbox = GetComponentInChildren<BoxCollider2D>();
+        melee = GetComponentInChildren<PlayerMeleeHitbox>();
+        movement = GetComponent<PlayerMovement>();
     }
 
     void Start()
@@ -42,12 +48,20 @@ public class PlayerActions : MonoBehaviour
     // Triggered via Animatior event.
     public void EnableAttackHitbox()
     {
-        Collider2D[] hits = Physics2D.OverlapBoxAll(
-            hitbox.transform.position,
-            hitbox.size,
-            0f,
-            damageableLayer
-        );
+
+        
+        // Vector2 hitboxPosition = hitbox.transform.position;
+
+        // Collider2D[] hits = Physics2D.OverlapBoxAll(
+        //     new Vector2(hitboxPosition.x + hitbox.offset.x, hitboxPosition.y + hitbox.offset.y),
+        //     hitbox.size,
+        //     0f,
+        //     damageableLayer
+        // );
+
+        int direction = movement.isFacingRight? 1 : -1;
+
+        Collider2D[] hits = melee.InitializeHitbox(direction);
 
         foreach (Collider2D hit in hits)
         {
@@ -65,4 +79,6 @@ public class PlayerActions : MonoBehaviour
     {
         animator.SetBool("isAttacking", false);
     }
+
+
 }

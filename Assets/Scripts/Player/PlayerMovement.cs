@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
     private PlayerInput input;
     private Animator animator;
 
-    private bool isFacingRight = true;
+    public bool isFacingRight {get; private set;} = true;
 
     
     [SerializeField] private float velocidad = 5f;
@@ -45,6 +45,6 @@ public class PlayerMovement : MonoBehaviour
     private void Flip()
     {
         isFacingRight = !isFacingRight;
-        transform.Rotate(0, 180, 0);
+        gameObject.transform.Rotate(0, 180, 0);
     }
 }
