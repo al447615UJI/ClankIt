@@ -83,7 +83,6 @@ public class Enemy : MonoBehaviour, IDamageable, IEnemyMoveable, ITriggerCheckea
 
     public void Damage(int damageAmount)
     {
-        Debug.Log("Im getting damaged!!");
         currentHealth -= damageAmount;
 
         if (currentHealth <= 0)

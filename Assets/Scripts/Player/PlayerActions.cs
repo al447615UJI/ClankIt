@@ -18,7 +18,6 @@ public class PlayerActions : MonoBehaviour
         animator = GetComponent<Animator>();
         input = GetComponent<PlayerInput>();
         controller = GetComponent<PlayerController>();
-        //hitbox = GetComponentInChildren<BoxCollider2D>();
         melee = GetComponentInChildren<PlayerMeleeHitbox>();
         movement = GetComponent<PlayerMovement>();
     }
@@ -48,16 +47,6 @@ public class PlayerActions : MonoBehaviour
     // Triggered via Animatior event.
     public void EnableAttackHitbox()
     {
-
-        
-        // Vector2 hitboxPosition = hitbox.transform.position;
-
-        // Collider2D[] hits = Physics2D.OverlapBoxAll(
-        //     new Vector2(hitboxPosition.x + hitbox.offset.x, hitboxPosition.y + hitbox.offset.y),
-        //     hitbox.size,
-        //     0f,
-        //     damageableLayer
-        // );
 
         int direction = movement.isFacingRight? 1 : -1;
 

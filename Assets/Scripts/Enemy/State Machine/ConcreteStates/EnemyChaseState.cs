@@ -22,6 +22,8 @@ public class EnemyChaseState : EnemyState
     public override void EnterState()
     {
         base.EnterState();
+        //Debug.Log("I entered ChaseState");
+
     }
 
     public override void ExitState()

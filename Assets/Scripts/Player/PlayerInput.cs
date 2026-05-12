@@ -18,23 +18,6 @@ public class PlayerInput : MonoBehaviour
     void Update()
     {
         movement = moveAction.ReadValue<Vector2>();
-        isAttacking = attack.WasPressedThisFrame(); //una vez pulsado
-
-        // if (!InputSystem.actions.enabled)
-        // {
-        //     InputSystem.actions.Enable();
-        //     Debug.LogWarning("Input Asset fue deshabilitado externamente, re-enabling...");
-        // }
+        isAttacking = attack.WasPressedThisFrame(); 
     }
-    // void OnEnable()
-    // {
-    //     moveAction.Enable();
-    //     attack.Enable();
-    // }
-
-    // void OnDisable()
-    // {
-    //     moveAction.Disable();
-    //     attack.Disable();
-    // }
 }

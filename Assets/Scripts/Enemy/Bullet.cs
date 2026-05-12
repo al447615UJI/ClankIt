@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Bullet : MonoBehaviour
@@ -10,8 +11,14 @@ public class Bullet : MonoBehaviour
         {
             playerHealth.TakeDamage(2);
         }
-        
+        Debug.Log("Destroyed by " + collision.gameObject.name);
+
         Destroy(gameObject);
+
+    }
+    void OnDestroy()
+    {
+        Debug.Log("Bullet Destroy");
 
     }
 }
