@@ -3616,6 +3616,63 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!1001 &79663268
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 22962755836883879, guid: 041f59d7071a47b428d016d4e71f09d6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 22962755836883879, guid: 041f59d7071a47b428d016d4e71f09d6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 22962755836883879, guid: 041f59d7071a47b428d016d4e71f09d6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22962755836883879, guid: 041f59d7071a47b428d016d4e71f09d6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22962755836883879, guid: 041f59d7071a47b428d016d4e71f09d6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22962755836883879, guid: 041f59d7071a47b428d016d4e71f09d6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22962755836883879, guid: 041f59d7071a47b428d016d4e71f09d6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22962755836883879, guid: 041f59d7071a47b428d016d4e71f09d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22962755836883879, guid: 041f59d7071a47b428d016d4e71f09d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22962755836883879, guid: 041f59d7071a47b428d016d4e71f09d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5053779787022317379, guid: 041f59d7071a47b428d016d4e71f09d6, type: 3}
+      propertyPath: m_Name
+      value: Enemy - Cucaracha (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 041f59d7071a47b428d016d4e71f09d6, type: 3}
 --- !u!1 &197761359
 GameObject:
   m_ObjectHideFlags: 0
@@ -5041,6 +5098,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1086901543
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 22962755836883879, guid: 041f59d7071a47b428d016d4e71f09d6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 22962755836883879, guid: 041f59d7071a47b428d016d4e71f09d6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 22962755836883879, guid: 041f59d7071a47b428d016d4e71f09d6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22962755836883879, guid: 041f59d7071a47b428d016d4e71f09d6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22962755836883879, guid: 041f59d7071a47b428d016d4e71f09d6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22962755836883879, guid: 041f59d7071a47b428d016d4e71f09d6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22962755836883879, guid: 041f59d7071a47b428d016d4e71f09d6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22962755836883879, guid: 041f59d7071a47b428d016d4e71f09d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22962755836883879, guid: 041f59d7071a47b428d016d4e71f09d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22962755836883879, guid: 041f59d7071a47b428d016d4e71f09d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5053779787022317379, guid: 041f59d7071a47b428d016d4e71f09d6, type: 3}
+      propertyPath: m_Name
+      value: Enemy - Cucaracha (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 041f59d7071a47b428d016d4e71f09d6, type: 3}
 --- !u!1 &1188357281
 GameObject:
   m_ObjectHideFlags: 0
@@ -6243,5 +6357,7 @@ SceneRoots:
   - {fileID: 4291933819811927362}
   - {fileID: 1188357283}
   - {fileID: 7316921436531275338}
+  - {fileID: 1086901543}
+  - {fileID: 79663268}
   - {fileID: 2142476460}
   - {fileID: 6499106550854111870}

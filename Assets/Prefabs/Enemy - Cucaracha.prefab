@@ -46,6 +46,7 @@ GameObject:
   - component: {fileID: 5199777828688753995}
   - component: {fileID: 7758248761127636911}
   - component: {fileID: 3213426410923852094}
+  - component: {fileID: 6931042833393536007}
   m_Layer: 3
   m_Name: Enemy - Cucaracha
   m_TagString: Untagged
@@ -206,9 +207,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Roach
   <maxHealth>k__BackingField: 3
+  score: 100
   bulletPrefab: {fileID: 7646775607332585078, guid: 9544ce184d3035f4d8c614894016948f, type: 3}
   randomMovementRange: 5
   randomMovementSpeed: 1
+--- !u!95 &6931042833393536007
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5053779787022317379}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 63d8bde13cc792d40bd8de24d2523346, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &7212852950899514969
 GameObject:
   m_ObjectHideFlags: 0

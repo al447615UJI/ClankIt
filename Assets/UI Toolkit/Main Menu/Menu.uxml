@@ -1,9 +1,8 @@
 <ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <Style src="project://database/Assets/UI%20Toolkit/Menu.uss?fileID=7433441132597879392&amp;guid=9edfb01c80368034db429b27429211c6&amp;type=3"/>
-    <ui:VisualElement name="Container" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Sprites/Sprout/Menu/MenuCompleto%201.png?fileID=2800000&amp;guid=58ae0ba8b21cb7c4b92b95e4dda809c7&amp;type=3#MenuCompleto 1&quot;); -unity-text-outline-width: 0; font-size: 15px;">
-        <ui:VisualElement name="Bottom" style="margin-top: auto; height: 25%; flex-direction: row; align-items: stretch; justify-content: space-around; margin-bottom: 1%;">
+    <Style src="project://database/Assets/UI%20Toolkit/Main%20Menu/Menu.uss?fileID=7433441132597879392&amp;guid=9edfb01c80368034db429b27429211c6&amp;type=3#Menu"/>
+    <ui:VisualElement name="Container" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Sprites/Sprout/Menu/VersionFinalMenu.png?fileID=2800000&amp;guid=f9971bfda55d0f2479650caecaeec7c1&amp;type=3#VersionFinalMenu&quot;); -unity-text-outline-width: 0; font-size: 15px;">
+        <ui:VisualElement name="Bottom" style="margin-top: auto; height: 16%; flex-direction: row; align-items: stretch; justify-content: space-around; margin-bottom: 1%;">
             <ui:Button text="PLAY" name="Play" class="menu-boton"/>
-            <ui:Button text="SETTINGS" name="Settings" class="menu-boton"/>
             <ui:Button text="EXIT" name="Exit" class="menu-boton"/>
         </ui:VisualElement>
     </ui:VisualElement>

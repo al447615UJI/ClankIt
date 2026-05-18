@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour, IDamageable, IEnemyMoveable, ITriggerCheckeable
 {
-    private EnemyHealthBar healthBar;
+    private HealthBar healthBar;
     [field: SerializeField] public int maxHealth { get ; set ; }
     [SerializeField] private int score = 100;
     public int currentHealth { get ; set ; }
@@ -36,7 +36,7 @@ public class Enemy : MonoBehaviour, IDamageable, IEnemyMoveable, ITriggerCheckea
         attackState = new EnemyAttackState(this, stateMachine);
 
         //
-        healthBar = GetComponentInChildren<EnemyHealthBar>();
+        healthBar = GetComponentInChildren<HealthBar>();
     }
 
 

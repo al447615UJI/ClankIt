@@ -1,10 +1,10 @@
 using UnityEngine;
 
-public class EnemyHealthBar : MonoBehaviour
+public class HealthBar : MonoBehaviour
 {
     [SerializeField] private SpriteRenderer bar;
-    private float maxBarSizeX = 1f;
-    private float maxBarSizeY = 1f;
+    [SerializeField] private float maxBarSizeX = 1f;
+    [SerializeField] private float maxBarSizeY = 1f;
     
 
     public void SetSize(int currentHealth, int maxHealth)

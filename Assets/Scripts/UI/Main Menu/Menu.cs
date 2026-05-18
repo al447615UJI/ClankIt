@@ -5,7 +5,6 @@ using UnityEngine.UIElements;
 public class Menu : MonoBehaviour
 {
     private Button playButton;
-    private Button settingsButton;
     private Button exitButton;
     void Awake()
     {
@@ -14,17 +13,13 @@ public class Menu : MonoBehaviour
         VisualElement bottom = container.Q<VisualElement>("Bottom");
 
         playButton = bottom.Q<Button>("Play");
-        settingsButton = bottom.Q<Button>("Settings");
         exitButton = bottom.Q<Button>("Exit");
     }
     private void OnPlayButtonClicked()
     {
         SceneManager.LoadScene("Proyecto1");
     }
-    private void OnSettingsButtonClicked()
-    {
-        Debug.Log("Settings siendo pulsado!!");
-    }
+
     private void OnExitButtonClicked()
     {
         Application.Quit();
@@ -32,7 +27,6 @@ public class Menu : MonoBehaviour
     private void OnEnable()
     {
         playButton.clicked += OnPlayButtonClicked;
-        settingsButton.clicked += OnSettingsButtonClicked;
         exitButton.clicked += OnExitButtonClicked;
     }
 }

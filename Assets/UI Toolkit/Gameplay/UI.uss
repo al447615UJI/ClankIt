@@ -2,11 +2,12 @@
 }
 
 .ui-label {
-    font-size: 300%;
+    font-size: 392%;
     color: rgb(255, 255, 255);
     margin-top: 2%;
     margin-right: 2%;
     margin-bottom: 2%;
     margin-left: 2%;
     -unity-text-outline-width: 1px;
+    -unity-font-definition: url("project://database/Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Fonts/PerfectDOSVGA437.ttf?fileID=12800000&guid=74a5091d8707f334b9a5c31ef71a64ba&type=3#PerfectDOSVGA437");
 }
